@@ -1,13 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import App from "./App";
+import MySuspense from "./components/Lazy-Suspense/Suspense";
 import Home from "./components/Home/Home";
+import Layout from "./Layout/index";
 const Routes = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/suspense" exact component={MySuspense} />
+        </Switch>
+      </Layout>
     </Router>
   );
 };

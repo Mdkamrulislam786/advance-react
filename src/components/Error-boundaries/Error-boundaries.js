@@ -20,7 +20,7 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       // You can render any custom fallback UI
-      return <h4>Something went wrong.</h4>;
+      return <h4>Something went wrong. @Error-boundary</h4>;
     }
 
     return this.props.children;
@@ -28,3 +28,10 @@ class ErrorBoundary extends React.Component {
 }
 
 export default ErrorBoundary;
+
+// Note
+// Error boundaries do not catch errors for:
+// Event handlers (learn more)
+// Asynchronous code (e.g. setTimeout or requestAnimationFrame callbacks)
+// Server side rendering
+// Errors thrown in the error boundary itself (rather than its children)
