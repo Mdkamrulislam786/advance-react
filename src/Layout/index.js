@@ -10,6 +10,14 @@ let navs = [
     nav: "Suspense",
     to: "/suspense",
   },
+  {
+    nav: "PureComponent",
+    to: "/purecomponent",
+  },
+  {
+    nav: "Refs",
+    to: "/refs",
+  },
 ];
 
 const Layout = (props) => {
