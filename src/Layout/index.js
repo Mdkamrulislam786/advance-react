@@ -7,6 +7,10 @@ let navs = [
     to: "/",
   },
   {
+    nav: "Hooks",
+    to: "/hooks",
+  },
+  {
     nav: "Suspense",
     to: "/suspense",
   },
@@ -17,6 +21,10 @@ let navs = [
   {
     nav: "Refs",
     to: "/refs",
+  },
+   {
+    nav: "Portals",
+    to: "/portals",
   },
 ];
 
