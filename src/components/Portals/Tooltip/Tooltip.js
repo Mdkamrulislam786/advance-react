@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Portal from "../Portal";
+import TooltipPortal from "./TooltipPortal";
 
 const Tooltip = () => {
   const [coords, setCoords] = useState({}); // takes current button coordinates
@@ -14,17 +14,28 @@ const Tooltip = () => {
             left: rect.x + rect.width / 2,
             top: rect.y + window.scrollY,
           });
-          setOn(!isOn); // [ 3 ]
+          setOn(!isOn);
         }}
       >
         Click me
       </button>
       {isOn && (
-        <Portal>
-          <div>
+        <TooltipPortal>
+          <div
+            style={{
+              position: "absolute",
+              backgroundColor: "#eee",
+              ...coords,
+              textAlign: "center",
+              maxWidth: "300px",
+              height: "100px",
+              padding: "5px",
+              margin: "0 auto",
+            }}
+          >
             Awesome content that is never cut off by its parent container!
           </div>
-        </Portal>
+        </TooltipPortal>
       )}
     </div>
   );

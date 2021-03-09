@@ -1,5 +1,5 @@
-import React from 'react'
-import Portal from '../Portal';
+import React from "react";
+import Portal from "../Portal";
 
 class Modal extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class Modal extends React.Component {
               minHeight: "300px",
               margin: "1rem",
               position: "relative",
-              minWidth: "300px",
+              minWidth: "500px",
               boxShadow:
                 "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
               justifySelf: "center",
@@ -44,4 +44,4 @@ class Modal extends React.Component {
   }
 }
 
-export default Modal
+export default Modal;

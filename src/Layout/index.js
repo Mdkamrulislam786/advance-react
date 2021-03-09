@@ -22,9 +22,13 @@ let navs = [
     nav: "Refs",
     to: "/refs",
   },
-   {
+  {
     nav: "Portals",
     to: "/portals",
+  },
+  {
+    nav: "Profiler",
+    to: "/profiler",
   },
 ];
 

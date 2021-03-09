@@ -7,6 +7,7 @@ import ParentComp from "./components/PureComponent/ParentComp";
 import Refs from "./components/Refs";
 import Hooks from "./components/Hooks";
 import Portals from "./components/Portals";
+import Profiler from "./components/More/Profiler";
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
           <Route path="/refs" exact component={Refs} />
           <Route path="/hooks" exact component={Hooks} />
           <Route path="/portals" exact component={Portals} />
+          <Route path="/profiler" exact component={Profiler} />
         </Switch>
       </Layout>
     </Router>
