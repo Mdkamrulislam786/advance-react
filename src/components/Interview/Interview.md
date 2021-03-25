@@ -34,3 +34,13 @@ Answer:
 Any state is always owned by some specific component, and any data or UI derived from that state can only affect components “below” them in the tree.
 
 If you imagine a component tree as a waterfall of props, each component’s state is like an additional water source that joins it at an arbitrary point but also flows down.
+
+5) What does it mean to "lift state up"?
+Answer:
+Suppose you have a function App where you are rendering a child component 'Counter'. Counter has some state and functions that does the counting and shows in the ui/view.
+Now if you transfer all the funtions and state in the counter component to App(parent) component and pass all the states and function to the child component as props. The counter component will grab the props and will work the same as before. So passing the props fromParent to child is now called as lifting state up.
+
+6) How do you prevent a component from rendering?
+ANswer:
+By using PureComponent, shouldComponetUpdate lifecycle methode, useMemo, useCallback, React.Memo(Compoent) etc. This check if the prev state is siilar to the next stae if it is, then component dosent re-render and memo calculates the state so it doesnt re-render every time.
+
