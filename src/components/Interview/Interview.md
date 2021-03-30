@@ -162,3 +162,55 @@ All the states are stored in Readux store,when you do an action(like a cliking a
 Answer:
 The server and local store is always in sync. Middleware manages the req&res between server and local store.
 
+#### 26) How to share logic accross component?
+Answer:
+Using Hire order Comnponents, Render Props pattern, Custom Hooks
+
+#### 27) What are some of the packages you use with React?
+Answer:
+Talk about what you use for Styling, Routing, State managemet, Form Handling and more.
+
+#### 28) Why should you dispatch an actionto update the state and not update store dierctly?
+Answer:
+Te documentaion has to say this:
+The only way to update the state is to call store.dispatch() and pass in an action object. The store will run its reducer function and save the new state value inside, and we can call getState() to retrieve the updated value:
+store.dispatch({ type: 'counter/incremented' })
+console.log(store.getState())
+// {value: 1}
+You can think of dispatching actions as "triggering an event" in the application. Something happened, and we want the store to know about it. Reducers act like event listeners, and when they hear an action they are interested in, they update the state in response.
+
+#### 29) Why should you dispatch an actionto update the state and not update store dierctly?
+Answer:
+Because of the javascript immutability concept.
+"mutation" (modifying existing object/array values) 
+"immutability" (treating values as something that cannot be changed).
+Learn more: https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers#reducers-and-immutable-updates
+
+#### 30) What are action creators in redux?
+Answer:
+It is another common convention that, instead of creating action objects inline in the places where you dispatch the actions, you would create functions generating them
+ex:
+export function addTodo(text) {
+  return {
+    type: 'ADD_TODO',
+    text
+  }
+}
+Learn more: https://redux.js.org/recipes/reducing-boilerplate#action-creators
+
+#### 31) What is prop drilling and how to overcome it?
+Answer:
+learn more: https://javascript.plainenglish.io/how-to-avoid-prop-drilling-in-react-using-component-composition-c42adfcdde1b#:~:text=Prop%20Drilling%20is%20the%20process,help%20in%20passing%20it%20around.
+
+And: https://kentcdodds.com/blog/prop-drilling
+
+### 32) Why should you use Functional Compoents in React?
+Answer:
+A Functional component is a function that takes props and returns JSX
+They do not have state or lifecycle methods.
+No Class means no ‘this’
+Fewer lines = better performance
+Functional components are easier to read, debug, and test. They offer performance benefits, decreased coupling, and greater reusability.
+They with a few downsides … but I think the benefits strongly outweigh these. Use them whenever you can.
+Functional components are built into React.  You can get started adding them (and refactoring unnecessary class components) to your existing projects right away!
+Learn more: https://programmingwithmosh.com/react/react-functional-components/
