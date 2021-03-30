@@ -1,5 +1,5 @@
 ### React Interview questions and answers
-1) Is it ok to modify props?
+#### 1) Is it ok to modify props?
 Answer: A component cannot update its own props unless they are arrays or objects (having a component update its own props even if possible is an anti-pattern), but can update its state and the props of its children.
 
 For instance, a Dashboard has a speed field in its state, and passes it to a Gauge child thats displays this speed. Its render method is just return <Gauge speed={this.state.speed} />. When the Dashboard calls this.setState({speed: this.state.speed + 1}), the Gauge is re-rendered with the new value for speed.
