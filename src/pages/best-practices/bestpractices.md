@@ -79,11 +79,21 @@ src
             ├── types.js
             ├── utils.js
 </code>
+
+<b>Structure 3</b>
+src<br>
+    -application(all the business logic-redux/state) <br>
+    -infastructure(services)<br>
+    -presentasion or views(react)<br>
+
 Here are some links for project structure:
 https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk
 
-#### Tips
+#### Best Parctice Tips
 1. Use TypeScript
 2. Use ESLint
 3. Use Styled Components
-4. 
+4. Split your components logic from the component itself
+5. Make your components indipendent and small. Your component should do/perform only one task/work
+6. 
+
