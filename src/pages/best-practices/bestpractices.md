@@ -18,7 +18,7 @@
         --Product.js
         --Product.css
         --ProductLogic.js
- --componenets
+ --components
     ---Button
         -Button.js
         -Button.css
@@ -81,19 +81,24 @@ src
 </code>
 
 <b>Structure 3</b>
+<code>
 src<br>
     -application(all the business logic-redux/state) <br>
     -infastructure(services)<br>
     -presentasion or views(react)<br>
+</code>
+
+
+
 
 Here are some links for project structure:
+Frontend architecture: https://www.youtube.com/watch?v=o8THlN8hgcw
 https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk
 
-#### Best Parctice Tips
+#### Best Practice Tips
 1. Use TypeScript
 2. Use ESLint
 3. Use Styled Components
 4. Split your components logic from the component itself
-5. Make your components indipendent and small. Your component should do/perform only one task/work
-6. 
+5. Make your components indipendent and small. Your component should do/perform only one task/work.
 
