@@ -81,19 +81,22 @@ src
 </code>
 
 <b>Structure 3</b>
+Clean architecture by uncle bob  
+Google about a important concept called `loose coupling, high cohession`  
+coupling: the degree of direct knowledge that one element has of another  
+high cohession: keep similar and related things together  
+
+try to build from the 'bottom up' from your data to UI you aregoing to learn a lot of stuff along the way  
 <code>
-src<br>
-    -application(all the business logic-redux/state) <br>
-    -infastructure(services)<br>
-    -presentasion or views(react)<br>
+src  
+    -application(all the business logic-redux/state)   
+    -infastructure(services)   
+    -presentasion or views(react)-all componenets and stuffs  
 </code>
 
-
-
-
-Here are some links for project structure:
-Frontend architecture: https://www.youtube.com/watch?v=o8THlN8hgcw
-https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk
+Here are some links for project structure:  
+Frontend architecture: https://www.youtube.com/watch?v=o8THlN8hgcw  
+https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk  
 
 #### Best Practice Tips
 1. Use TypeScript
