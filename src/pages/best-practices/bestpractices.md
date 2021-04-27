@@ -81,7 +81,7 @@ src
 </code>
 
 <b>Structure 3</b>
-Clean architecture by uncle bob  
+Clean architecture  
 Google about a important concept called `loose coupling, high cohession`  
 coupling: the degree of direct knowledge that one element has of another  
 high cohession: keep similar and related things together  
@@ -98,10 +98,24 @@ Here are some links for project structure:
 Frontend architecture: https://www.youtube.com/watch?v=o8THlN8hgcw  
 https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk  
 
-#### Best Practice Tips
+#### React Best Practice Tips
 1. Use TypeScript
-2. Use ESLint
 3. Use Styled Components
 4. Split your components logic from the component itself
 5. Make your components indipendent and small. Your component should do/perform only one task/work.
+6. Make your components reuasable af
+7. Learn about frontend architcture / design patterns for both react and redux
 
+
+#### Usefull Resource
+*Must Read: Clean Code by Reboert C Martin aka uncle bob: https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf  
+
+#### Must Learn as a better software enginner  
+
+1. Deep understanding of one programming language  
+2. Writing Clean Code
+3. Software Design Patterns
+4. Best practices of your stack
+5. Know your tools better
+6. Build big projects weeks to months long
+7. Do project based learning
