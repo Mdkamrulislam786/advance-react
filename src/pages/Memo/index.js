@@ -5,5 +5,5 @@ const MemoComp = ({ name }) => {
   return <div>Memo Comp: {name}</div>;
 };
 
-export default React.memo(MemoComp);
+export default React.memo(MemoComp)
 //it dosent re-renders, works like purecomp but its used for functional comp
