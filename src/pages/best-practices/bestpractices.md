@@ -107,9 +107,6 @@ https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable
 7. Learn about frontend architcture / design patterns for both react and redux
 
 
-#### Usefull Resource
-*Must Read: Clean Code by Reboert C Martin aka uncle bob: https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf  
-
 #### Must Learn as a better software enginner  
 
 1. Deep understanding of one programming language  
@@ -119,3 +116,16 @@ https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable
 5. Know your tools better
 6. Build big projects weeks to months long
 7. Do project based learning
+
+
+#### Usefull Resource
+*Must Read: Clean Code by Reboert C Martin aka uncle bob: https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf  
+Master useeffect: https://overreacted.io/a-complete-guide-to-useeffect/  
+State update: https://www.debuggr.io/react-update-unmounted-component/  
+When to use useCallback() and useMemo(): https://kentcdodds.com/blog/usememo-and-usecallback  
+https://kentcdodds.com/blog/  
+https://overreacted.io/  
+https://www.sipios.com/blog-tech/8-react-master-tips-tricks
+
+<b>Atomic Design Principles</b>  
+Link: https://andela.com/insights/structuring-your-react-application-atomic-design-principles/  

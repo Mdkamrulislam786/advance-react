@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MySuspense from "./components/Lazy-Suspense/Suspense";
-import Home from "./components/Home/Home";
+import MySuspense from "./pages/Lazy-Suspense/Suspense";
+import Home from "./pages/Home/Home";
 import Layout from "./Layout/index";
-import ParentComp from "./components/PureComponent/ParentComp";
-import Refs from "./components/Refs";
-import Hooks from "./components/Hooks";
-import Portals from "./components/Portals";
-import Profiler from "./components/More/Profiler";
+import ParentComp from "./pages/PureComponent/ParentComp";
+import Refs from "./pages/Refs";
+import Hooks from "./pages/Hooks";
+import Portals from "./pages/Portals";
+import Profiler from "./pages/More/Profiler";
 
 const Routes = () => {
   return (
