@@ -19,3 +19,8 @@ Clean code collection books: https://github.com/sdcuike/Clean-Code-Collection-Bo
 Clean architecture blog: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture. html  
 Frontend architecture: https://www.youtube.com/watch?v=o8THlN8hgcw  
 https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable-application-18kk
+
+<b>Real world App to level up </b>
+https://github.com/reck1ess/next-realworld-example-app  
+https://github.com/arrlancore/nextjs-ssr-real-world-app-example  
+old: https://github.com/AmetAlvirde/advanced-real-world-nextjs-app  
