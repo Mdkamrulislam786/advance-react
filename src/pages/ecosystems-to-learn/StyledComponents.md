@@ -1,7 +1,8 @@
 ## Styled Components Docs + Best practices
 
 Getting started
-Docs: https://styled-components.com/docs  
+Docs: https://styled-components.com/docs
+
 ```
 # with npm
 npm install --save styled-components
@@ -68,10 +69,13 @@ const ReversedButton = props => <Button {...props} children={props.children.spli
 ```
 
 <b>Pseudoelements, pseudoselectors, and nesting </b>
+https://sass-lang.com/documentation/style-rules  
+https://gist.github.com/hofmannsven/b219051467f86f2ac469
 
 <b>Theming</b>  
-
+https://css-tricks.com/theming-and-theme-switching-with-react-and-styled-components/#top-of-site
 
 ### Blog
+
 https://www.robinwieruch.de/styled-components  
-https://css-tricks.com/theming-and-theme-switching-with-react-and-styled-components/#top-of-site  
+https://css-tricks.com/theming-and-theme-switching-with-react-and-styled-components/#top-of-site
