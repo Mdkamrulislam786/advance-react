@@ -1,4 +1,4 @@
-## getting started
+## Getting started
 yarn to install dependencies, run : yarn start
 
 ### Tech used
