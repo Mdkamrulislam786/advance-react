@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-const Form = ({ defaultValues, children, onSubmit }) => {
-  const { handleSubmit, register } = useForm({ defaultValues });
+const Form = ({ defaultValues, children, onSubmit, ...rest }) => {
+  const {
+    handleSubmit,
+    register,
+    formState: { errors, isSubmitSuccessful },
+    reset,
+  } = useForm({ defaultValues });
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({});
+    }
+  }, [isSubmitSuccessful, reset]);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form {...rest} onSubmit={handleSubmit(onSubmit)}>
       {Array.isArray(children)
         ? children.map((child) => {
             return child.props.name
@@ -13,6 +24,7 @@ const Form = ({ defaultValues, children, onSubmit }) => {
                   ...{
                     ...child.props,
                     register,
+                    errors,
                     key: child.props.name,
                   },
                 })

@@ -7,7 +7,7 @@ import ParentComp from "./pages/PureComponent/ParentComp";
 import Refs from "./pages/Refs";
 import Hooks from "./pages/Hooks";
 import Portals from "./pages/Portals";
-import Profiler from "./pages/More/Profiler";
+import Profiler from "./pages/Profiler/Profiler";
 import HookForm from "./pages/ecosystems-to-learn/react-hook-form";
 
 const Routes = () => {

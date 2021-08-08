@@ -1,27 +1,41 @@
 import React from "react";
+import Button from "../../../Components/Button";
 import Form from "../../../Components/Form";
 import Input from "../../../Components/Input";
+import Radio from "../../../Components/Radio/Radio";
 import Select from "../../../Components/Select";
+import {
+  fileValidSchema,
+  numberValidationSchema,
+  required,
+} from "../../../Utils/formValidations";
 
-const HookForm = () => {
+const ReactHookForm = () => {
   const onSubmit = (data) => {
-    console.log(data);
+    alert(JSON.stringify(data, null, 4));
   };
 
   return (
-    <Form onSubmit={onSubmit}>
-      <Input name="firstName" placeholder="First Name" type="text" />
+    <Form onSubmit={onSubmit} className="formWrapper">
+      <Input
+        name="firstName"
+        placeholder="First Name"
+        type="text"
+        validations={required}
+      />
       <Input name="lastName" placeholder="Last Name" type="text" />
-      <Select name="sex" options={["female", "male"]} />
-      <button type="submit">Submit</button>
+      <Input name="file" type="file" validations={fileValidSchema} />
+      <Input
+        name="number"
+        placeholder="Phone number"
+        type="number"
+        validations={numberValidationSchema}
+      />
+      <Select name="gender" options={["female", "male"]} />
+      <Radio name="remember" label="Rememeber Me" type="checkbox" />
+      <Button type="submit">Submit</Button>
     </Form>
   );
 };
 
-export default HookForm;
-
-/* 
-1. create all type of form field
-2. Do validation 
-3. Basic form checks
-*/
+export default ReactHookForm;
