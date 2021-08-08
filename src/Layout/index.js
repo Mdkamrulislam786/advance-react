@@ -30,6 +30,7 @@ let navs = [
     nav: "Profiler",
     to: "/profiler",
   },
+  { nav: "React Hook Form", to: "/react-hook-form" },
 ];
 
 const Layout = (props) => {

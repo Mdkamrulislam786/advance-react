@@ -8,6 +8,7 @@ import Refs from "./pages/Refs";
 import Hooks from "./pages/Hooks";
 import Portals from "./pages/Portals";
 import Profiler from "./pages/More/Profiler";
+import HookForm from "./pages/ecosystems-to-learn/react-hook-form";
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
           <Route path="/hooks" exact component={Hooks} />
           <Route path="/portals" exact component={Portals} />
           <Route path="/profiler" exact component={Profiler} />
+          <Route path="/react-hook-form" exact component={HookForm} />
         </Switch>
       </Layout>
     </Router>
