@@ -47,7 +47,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-Store
+Store  
 The current Redux application state lives in an object called the store .
 
 The store is created by passing in a reducer/ root reducers using combined reducers, and has a method called getState that returns the current state value
@@ -63,10 +63,10 @@ export default store
 
 ```
 
-Dispatch
+Dispatch  
 The Redux store has a method called dispatch. The only way to update the state is to call store.dispatch() and pass in an action object. The store will run its reducer function and save the new state value inside, and we can call getState() to retrieve the updated value.
 
-Selectors
+Selectors  
 Selectors are functions that know how to extract specific pieces of information from a store state value. As an application grows bigger, this can help avoid repeating logic as different parts of the app need to read the same data.
 
 ```
@@ -79,12 +79,12 @@ console.log(currentValue)
 Redux app data flow  
 https://redux.js.org/tutorials/essentials/part-1-overview-concepts#redux-application-data-flow
 
-Thunk
+Thunk  
 
-By itself, a Redux store doesn't know anything about async logic. Any asynchronicity has to happen outside the store. WE use middlewares if you want to have async logic interact with the store by dispatching or checking the current store state. A thunk is a specific kind of Redux function that can contain asynchronous logic. Thunks are written using two functions:
+By itself, a Redux store doesn't know anything about async logic. Any asynchronicity has to happen outside the store. WE use middlewares if you want to have async logic interact with the store by dispatching or checking the current store state. A thunk is a specific kind of Redux function that can contain asynchronous logic. Thunks are written using two functions:  
 
-An inside thunk function, which gets dispatch and getState as arguments  
-The outside creator function, which creates and returns the thunk function
+An inside thunk function, which gets dispatch and getState as arguments   
+The outside creator function, which creates and returns the thunk function  
 
 ```
 // the outside "thunk creator" function
@@ -104,25 +104,25 @@ const fetchUserById = userId => {
 ```
 
 Why should we use redux thunk or saga?  
-Answer: https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux
+Answer: https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux  
 
-MIddlewares  
+MIddlewares   
 Redux uses a special kind of addon called middleware to let us customize the dispatch function.
 Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more.
 Unlike a reducer, middleware can have side effects inside, including timeouts and other async logic.
 
-MIddlewares runs one after another in chain:
-In this case, the action is passed through:
+MIddlewares runs one after another in chain:  
+In this case, the action is passed through:  
 
-The print1 middleware (which we see as store.dispatch)
-The print2 middleware
-The print3 middleware
-The original store.dispatch
-The root reducer inside store
-And since these are all function calls, they all return from that call stack. So, the print1 middleware is the first to run, and the last to finish.
+The print1 middleware (which we see as store.dispatch)  
+The print2 middleware  
+The print3 middleware  
+The original store.dispatch  
+The root reducer inside store  
+And since these are all function calls, they all return from that call stack. So, the print1 middleware is the first to run, and the last to finish.  
 
-Middleware are the main way to customize the store
-Middleware are added using the applyMiddleware enhancer
-Middleware are written as three nested functions inside each other
-Middleware run each time an action is dispatched
-Middleware can have side effects inside
+Middleware are the main way to customize the store  
+Middleware are added using the applyMiddleware enhancer  
+Middleware are written as three nested functions inside each other  
+Middleware run each time an action is dispatched  
+Middleware can have side effects inside  
