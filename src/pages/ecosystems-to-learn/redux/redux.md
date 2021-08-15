@@ -126,3 +126,7 @@ Middleware are added using the applyMiddleware enhancer
 Middleware are written as three nested functions inside each other  
 Middleware run each time an action is dispatched  
 Middleware can have side effects inside  
+
+
+#### Redux saga
+Documentation: https://redux-saga.js.org/docs/introduction/GettingStarted
