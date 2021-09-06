@@ -10,6 +10,7 @@ https://overreacted.io/
 https://www.sipios.com/blog-tech/8-react-master-tips-tricks
 Custom hooks: https://dev.to/damcosset/how-to-create-custom-hooks-in-react-44nd  
 https://reactjs.org/docs/hooks-intro.html
+Interview question JS : https://medium.com/@habibul.hasan.hira/10-javascript-questions-for-the-next-interview-7d6e059b779d
 
 <b>React + software architecture + design Principles</b>  
 Link: https://andela.com/insights/structuring-your-react-application-atomic-design-principles/  
@@ -23,4 +24,4 @@ https://dev.to/syakirurahman/react-project-structure-best-practices-for-scalable
 <b>Real world App to level up </b>
 https://github.com/reck1ess/next-realworld-example-app  
 https://github.com/arrlancore/nextjs-ssr-real-world-app-example  
-old: https://github.com/AmetAlvirde/advanced-real-world-nextjs-app  
+old: https://github.com/AmetAlvirde/advanced-real-world-nextjs-app 
