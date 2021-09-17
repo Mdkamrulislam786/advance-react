@@ -81,7 +81,7 @@ https://redux.js.org/tutorials/essentials/part-1-overview-concepts#redux-applica
 
 Thunk  
 
-By itself, a Redux store doesn't know anything about async logic. Any asynchronicity has to happen outside the store. WE use middlewares if you want to have async logic interact with the store by dispatching or checking the current store state. A thunk is a specific kind of Redux function that can contain asynchronous logic. Thunks are written using two functions:  
+By itself, a Redux store doesn't know anything about async logic. Any asynchronicity has to happen outside the store. We use middlewares if you want to have async logic interact with the store by dispatching or checking the current store state. A thunk is a specific kind of Redux function that can contain asynchronous logic. Thunks are written using two functions:  
 
 An inside thunk function, which gets dispatch and getState as arguments   
 The outside creator function, which creates and returns the thunk function  
@@ -109,7 +109,7 @@ Answer: https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-f
 MIddlewares   
 Redux uses a special kind of addon called middleware to let us customize the dispatch function.
 Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more.
-Unlike a reducer, middleware can have side effects inside, including timeouts and other async logic.
+Unlike a reducer, middleware can have side effects inside, including timeouts and other async logic
 
 MIddlewares runs one after another in chain:  
 In this case, the action is passed through:  
