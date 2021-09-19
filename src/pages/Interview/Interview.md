@@ -205,7 +205,7 @@ console.log(store.getState())
 // {value: 1}
 You can think of dispatching actions as "triggering an event" in the application. Something happened, and we want the store to know about it. Reducers act like event listeners, and when they hear an action they are interested in, they update the state in response.
 
-#### 29) Why should you dispatch an actionto update the state and not update store dierctly?
+#### 29) Why should you dispatch an action to update the state and not update store dierctly?
 
 Answer:
 Because of the javascript immutability concept.
