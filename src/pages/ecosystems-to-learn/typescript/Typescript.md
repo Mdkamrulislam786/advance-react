@@ -56,16 +56,28 @@ function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[
 const parsed = map(["1", "2", "3"], (n) => parseInt(n));
 ```
 
+```
+function getArray<T>(items: T[]): T[]{
+  return new Array.concat(items)
+}
+
+let numArr = getArray<number>([1,2,3,4])
+let stringArr = getArray<string>(['k','a','m','r'])
+
+numArr.push('l') //error
+```
+
 <b>constraints</b>
 <Type extends { length: number }> means the arguments passed to the func must have a .length property
 
 ```
+
 function longest<Type extends { length: number }>(a: Type, b: Type) {
-  if (a.length >= b.length) {
-    return a;
-  } else {
-    return b;
-  }
+if (a.length >= b.length) {
+return a;
+} else {
+return b;
+}
 }
 
 // longerArray is of type 'number[]'
@@ -74,15 +86,18 @@ const longerArray = longest([1, 2], [1, 2, 3]);
 const longerString = longest("alice", "bob");
 // Error! Numbers don't have a 'length' property
 const notOK = longest(10, 100);
+
 ```
 
 ### Arrays
 
 ```
+
 const names: string[] = ['kamrul', 'wali', 'abbas']
 const name: string[][] = [ ['strins']]
 //multiple type is an array
 const arr : (Date } string)[] = [new Date(), 'kamrul']
+
 ```
 
 use type annotaion here if we dont declare the shape of array upfront
@@ -92,6 +107,7 @@ use type annotaion here if we dont declare the shape of array upfront
 Array like structure but very specific in order and type. Example
 
 ```
+
 type Drink = [string, boolen, number] //new type created
 const drink: Drink = ['monster', true, 40]
 drink[0] = 12 //error cauase a [0] point we've a string
@@ -110,23 +126,80 @@ var employee: [number, string] = [1, "Steve"];
 Creates a new type that describes the properties( names and values) of a objects.
 
 ```
+
 interface IPerson {
-   firstName:string,
-   lastName:string,
-   sayHi: ()=>string,
-  //equvalent sayHi() : string
+firstName:string,
+lastName:string,
+sayHi: ()=>string,
+//equvalent sayHi() : string
 }
 
 var customer:IPerson = {
-   firstName:"Tom",
-   lastName:"Hanks",
-   sayHi: ():string =>{return "Hi there"}
+firstName:"Tom",
+lastName:"Hanks",
+sayHi: ():string =>{return "Hi there"}
 }
+
+```
+
+### Unioin type
+
+let pid: string | number
+pid= 20
+pid='kams'
+
+### Enums : named constants
+
+```
+
+enum Directions {
+Up,
+Right,
+Bottom,
+Left
+}
+
+```
+
+By default Up down etc has value starting from top(0) to bottom (4), like Up = 0,
+Right = 1,
+Bottom = 2,
+Left=3
+We can asign Up = 1, then the rest of the value will be 2,3,4. We can also assign string value here, like Up = 'Up', Left = 'left' etc
+
+### Object
+
+```
+
+interface User{
+name:string,
+age:number
+}
+
+type User = {
+name:string,
+age:number
+}
+let person : User = {
+name:'kams',
+age:23
+}
+
+```
+
+### Type assertion
+
+```
+
+let cid :any = 1
+let customerID = cid as number OR <number>cid
+
 ```
 
 ### Basic types
 
 ```
+
 let num:number = 10;
 let name:string = 'kams'
 let bool : boolean = true
@@ -134,9 +207,13 @@ let arr: string[] = ['kam', 'rul']
 let arr: Array<string> = ['kam', 'rul']
 let arr : any[] = ['kam', true, 40]
 let multiArr: Array<string | number | boolean> = ['kam', true, 40]
-let tuple : [string, boolean, number] =  ['kam', true, 40]
+let tuple : [string, boolean, number] = ['kam', true, 40]
 
 ```
 
 <b>Typescript in a nutshell</b>
 https://learnxinyminutes.com/docs/typescript/
+
+```
+
+```
