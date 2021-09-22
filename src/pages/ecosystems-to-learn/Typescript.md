@@ -137,3 +137,6 @@ let multiArr: Array<string | number | boolean> = ['kam', true, 40]
 let tuple : [string, boolean, number] =  ['kam', true, 40]
 
 ```
+
+<b>Typescript in a nutshell</b>
+https://learnxinyminutes.com/docs/typescript/
