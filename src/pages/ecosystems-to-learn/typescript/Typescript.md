@@ -213,6 +213,8 @@ let tuple : [string, boolean, number] = ['kam', true, 40]
 
 <b>Typescript in a nutshell</b>
 https://learnxinyminutes.com/docs/typescript/
+<b>Advance</b>
+https://codesandbox.io/s/typescript-june-2021-tpxg3?file=/src/backlog.ts
 
 ```
 
