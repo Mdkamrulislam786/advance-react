@@ -68,7 +68,7 @@ numArr.push('l') //error
 ```
 
 <b>constraints</b>
-<Type extends { length: number }> means the arguments passed to the func must have a .length property
+<Type extends { length: number }> means the arguments passed to the func also has a .length property
 
 ```
 
