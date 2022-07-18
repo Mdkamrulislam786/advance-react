@@ -11,8 +11,18 @@ Process has 2 phases
  React goes downwards from root to the last component and checks for flagged componnets. a component can flag itself by calling usestate setstate and usereducer dipatch functiion.  
  react calls createElement func for all the flagged components, converts to react element and stores the render/output(elem objects). 
  Now react compares previous render(previous elements) to new render(new elements). Then a new list of changes are stored and these goes to commit phase.the changes are appplied to dom.  
- 1. find all elemnts flagged for update
+ 1. find all elemnets flagged for update
  2. for each flagged component, convert jsx to react elemnts and store the results
  3. Perform reconciliation -diff old and new tree of react elemnts (aka vrtual dom) 
  4. handover the changes to next phase
- Commit phase: apply changes to the dom
+ Commit phase: apply changes to the dom. 
+
+ useReducer and useState works the same way.  
+ 
+ ### State Immutablity
+ 
+ Mutating an object or array as state will not cause a re-render when used with the useState or useReducer hook.  
+ To re-render make a copy of the existinig state modify as necessary and then pass the new state to the setter function or while returning from a reducer function. 
+ 
+ 
+ 
