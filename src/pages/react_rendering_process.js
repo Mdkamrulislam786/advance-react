@@ -24,5 +24,9 @@ Process has 2 phases
  Mutating an object or array as state will not cause a re-render when used with the useState or useReducer hook.  
  To re-render make a copy of the existinig state modify as necessary and then pass the new state to the setter function or while returning from a reducer function. 
  
- 
+  ### Parent and Child
+  
+  When a parent component renders React will recursively render all of its children. 
+  New state same as old state after re-renders? Parent re-renders one more time but child never re-renders.
+  
  
