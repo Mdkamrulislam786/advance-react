@@ -27,6 +27,21 @@ Process has 2 phases
   ### Parent and Child
   
   When a parent component renders React will recursively render all of its children. 
-  New state same as old state after re-renders? Parent re-renders one more time but child never re-renders.
+  New state same as old state after re-renders? Parent re-renders one more time but child never re-renders.  
+  
+  
+  ### Same element reference
+  
+  Pass the expensive child compoenent as props to the parent component. So Whenever theres a re-render in parent componenet react will optimize the re-render for you
+  by knowing that the props has to be referencing the same elemnt before and after render. 
+  
+  ### React Memo
+  
+  use react memo when a children is re-rendering unneccessarily because of the parent state changed and that state dosent effect the children. 
+  use it for expensive components that prop hardly changes. You cant use memo everywhere because its expensive. like a comp takes 10ms to render 2ms to optimize the render by using react memo. so if the prop changes to re-render it'll take 10+2=12ms everytime. 
+  Incorrect memoizations:  
+  There is no need to wrap child component with react memo if the children itself has react element 
+  Incorrect memo with Impure Component(JSX can change evenif the state and props remained the same). Example random values, like Math.random(), new Date().getTime() etc
+  
   
  
