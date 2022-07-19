@@ -43,5 +43,6 @@ Process has 2 phases
   There is no need to wrap child component with react memo if the children itself has react element 
   Incorrect memo with Impure Component(JSX can change evenif the state and props remained the same). Example random values, like Math.random(), new Date().getTime() etc
   
-  
+  *** If your component has objects or functions and you are wrapping one of its child components with react memo then its an incorrect usage of memoization. 
+  your component will re-render even the object or function hasnt chaged. So to prevent this wrap the object or function with useMemo() and pass down the memoized prop to the children component.  
  
