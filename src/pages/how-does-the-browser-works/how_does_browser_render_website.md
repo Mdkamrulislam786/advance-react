@@ -17,13 +17,12 @@ Its a recursive process traverse render tree, nodes positions and size, layout i
 
 ## Paint
 
-Will takes the layout render tress, creates layers, incremental process, builds up over 12 phases like background color then image then border , shadow etc 
-
+Will takes the layout render tress, creates layers, incremental process, builds up over 12 phases like background color then image then border , shadow etc
 
 ## Recap
 Parsing -->> Dom tree  
 Dom tree -->> Render tree  
 Is actually 4 tress -->> layers,line boxes, render objects, render styles objects  
 Layout computes where a node will be on the screen  
-Painting computes bitmaps and composites to screen tgjrgmsfhm
+Painting computes bitmaps and composites to screen
 
